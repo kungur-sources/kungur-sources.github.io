@@ -1,4 +1,2 @@
----
-layout: default
----
-{% include_relative index.md %}
+{% capture my_include %}{% include index.md %}{% endcapture %}
+{{ my_include | markdownify }}
